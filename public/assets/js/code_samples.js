@@ -39,6 +39,7 @@ $(document).ready(function () {
   </body>
 </html>
 
+// Calculate the entropy of every image on the page
 console.table(
   [...document.images].map((img) => {
     const entry = performance.getEntriesByName(img.currentSrc)[0];
