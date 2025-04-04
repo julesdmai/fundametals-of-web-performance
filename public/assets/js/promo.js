@@ -11,6 +11,7 @@
  */
 window.addEventListener("DOMContentLoaded", async () => {
 
+  // Use API base URL for all fetches
   const productsResp = await fetch(`${API_BASE_URL}/api/products`);
   const products = await productsResp.json();
 
